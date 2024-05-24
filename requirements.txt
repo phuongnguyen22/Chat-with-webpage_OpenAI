@@ -1,0 +1,31 @@
+# Install locally Pytorch. Visit https://pytorch.org/get-started/locally/
+# Update the following URL to download and install appropriate Torch and Cuda for your system, e.g.: https://download.pytorch.org/whl/cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch
+
+# If you use CPU, please uncomment the following line and comment the two above lines
+# Install Pytorch from PyPI
+# torch==2.1.1
+
+# For determining appropriate platform-specific dirs in virtual environment
+platformdirs<4.0.0,>=3.2.0
+
+# Install other packages from PyPI
+# For app's backend
+python-dotenv==1.0.0
+langchain==0.0.345
+openai==1.3.7
+transformers==4.35.2
+accelerate==0.25.0
+chromadb==0.4.18
+tiktoken==0.5.2
+sentence-transformers==2.2.2
+
+# For the web app's interface (frontend)
+gradio==4.7.1
+streamlit==1.29.0
+
+# For notebooks playground
+jupyterlab==4.0.9
+jupyter==1.0.0
+ipywidgets==8.1.1
